@@ -1,6 +1,7 @@
 # v2ray-shift
-FROM alpine:latest
+# FROM alpine:latest
 # FROM scratch
+FROM busybox
 
 LABEL maintainer "Darian Raymond <admin@v2ray.com>"
 
