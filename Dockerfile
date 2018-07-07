@@ -1,5 +1,5 @@
 # v2ray-shift
-FROM alpine:3.7
+FROM alpine:3.8
 # FROM scratch
 # FROM busybox
 
