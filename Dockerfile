@@ -28,4 +28,6 @@ ENV PATH /usr/bin/v2ray:$PATH
 USER v2ray
 ENV USER=v2ray
 
+EXPOSE 8080
+
 CMD ["v2ray", "-config=/etc/v2ray/config.json"]
