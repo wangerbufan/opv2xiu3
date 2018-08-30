@@ -30,4 +30,6 @@ ENV USER=v2ray
 
 EXPOSE 8080
 
-CMD ["v2ray", "-config=/etc/v2ray/config.json"]
+CMD cp /etc/v2ray/config.json /tmp/config.json && \
+    sed -i "s/b831381d-6324-4d53-ad4f-8cda48b30811/$(ID)/g" /tmp/config.json && \
+    v2ray -config=/tmp/config.json
