@@ -10,6 +10,24 @@
       "security": "none"
     }
   },
+  "inboundDetour": [
+  {
+    "protocol": "http",
+    "port": 8080,
+    "listen": "127.0.0.1",
+    "settings": {
+      "timeout": 0,
+      "accounts": [
+        {
+          "user": "HTTPUSER",
+          "pass": "HTTPPASS"
+        }
+      ],
+      "allowTransparent": false,
+      "userLevel": 0
+    }
+  }
+  ],
   "outbound": {
     "protocol": "freedom",
     "settings": {}
