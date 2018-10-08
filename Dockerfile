@@ -36,3 +36,4 @@ CMD cp /etc/v2ray/config.json /tmp/config.json && \
     sed -i "s/HTTPUSER/${USER}/g" /tmp/config.json && \
     sed -i "s/HTTPPASS/${PASS}/g" /tmp/config.json && \
     v2ray -config=/tmp/config.json
+
